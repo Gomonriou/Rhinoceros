@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace Writer
 {
@@ -18,7 +20,7 @@ namespace Writer
                     line = sr.ReadLine();
                 }
                 sr.Close();
-                Console.ReadLine();
+                // Console.ReadLine();
             }
             catch(Exception e)
             {
@@ -28,6 +30,33 @@ namespace Writer
             {
                 Console.WriteLine("Executing finally block.");
             }
+        // }
+        // static void MongoDB(string[] args)
+        // {
+            try
+            {
+                // CONNECTION CLIENT MONGO
+                var settings = "mongodb+srv://root:toor@rhinoceros.jkqed.mongodb.net/Rhinoceros?retryWrites=true&w=majority";
+                var client = new MongoClient(settings);
+
+                // LISTE DES DB
+                var dbList = client.ListDatabases().ToList();
+                Console.WriteLine("The list of databases on this server is: ");
+                foreach (var db in dbList)
+                {
+                    Console.WriteLine(db);
+                }
+
+                // CONNECTION DB
+                var Database = client.GetDatabase("Rhinoceros");
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error:" + ex.Message);
+            }
         }
+
     }
 }
