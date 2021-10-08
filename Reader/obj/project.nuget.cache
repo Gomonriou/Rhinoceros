@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "hm2pa7QP554TXenNT1ojxaMzQC6vqkMfFWFqkM2NHsZaycV6u2RVExODtmMDAnpDZ2TTuTDwYFKA7Gncb6Ts+w==",
+  "success": true,
+  "projectFilePath": "/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/Reader.csproj",
+  "expectedPackageFiles": [
+    "/home/gomonriou/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/Writer
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/Writer.deps.json
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/Writer.runtimeconfig.json
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/Writer.runtimeconfig.dev.json
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/Writer.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/ref/Writer.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/bin/Debug/net5.0/Writer.pdb
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.csproj.AssemblyReference.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.GeneratedMSBuildEditorConfig.editorconfig
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.AssemblyInfoInputs.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.AssemblyInfo.cs
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.csproj.CoreCompileInputs.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/ref/Writer.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.pdb
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Writer/obj/Debug/net5.0/Writer.genruntimeconfig.cache
