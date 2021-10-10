@@ -63,7 +63,7 @@ namespace Writer
                         BsonDocument row = new BsonDocument
                         {
                             {"Code_Postale", values[0]},
-                            {"Department", values[1]},
+                            {"DepartmentNom", values[1]},
                             {"Population", values[2]},
                             {"GPS", values[3]}
                         };
