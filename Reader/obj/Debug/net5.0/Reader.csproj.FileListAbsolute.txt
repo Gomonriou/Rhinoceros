@@ -1,0 +1,7 @@
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.csproj.AssemblyReference.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.GeneratedMSBuildEditorConfig.editorconfig
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.AssemblyInfoInputs.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.AssemblyInfo.cs
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.csproj.CoreCompileInputs.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.MvcApplicationPartsAssemblyInfo.cs
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.MvcApplicationPartsAssemblyInfo.cache

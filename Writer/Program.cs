@@ -51,7 +51,7 @@ namespace Writer
                 var Database = client.GetDatabase("Rhinoceros");
 
                 var reader = new StreamReader(File.OpenRead(@"./population-francaise-par-departement-2018.csv")); 
-                IMongoCollection<BsonDocument> csvFile = Database.GetCollection<BsonDocument>("Rhinoceros");
+                IMongoCollection<BsonDocument> csvFile = Database.GetCollection<BsonDocument>("Departments");
 
                 reader.ReadLine(); 
 
@@ -62,8 +62,8 @@ namespace Writer
 
                         BsonDocument row = new BsonDocument
                         {
-                            {"Code Postale", values[0]},
-                            {"Département", values[1]},
+                            {"Code_Postale", values[0]},
+                            {"Department", values[1]},
                             {"Population", values[2]},
                             {"GPS", values[3]}
                         };
@@ -83,4 +83,4 @@ namespace Writer
     }
 }
 
-// Ajouter un ID incrementale, et remettre dans la db dans departement, rajouter les try catch 
+// Ajouter un ID incrementale, rajouter les try catch 
