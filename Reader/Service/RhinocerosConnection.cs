@@ -1,29 +1,31 @@
-// using System;
-// using System.Collections.Generic;
-// using System.Linq;
-// using MongoDB.Driver;
-// using MongoDB.Bson;
-// using MongoDB.Driver.Linq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using MongoDB.Driver;
+using MongoDB.Bson;
+using MongoDB.Driver.Linq;
+using Reader.Repository;
 
-// namespace Reader.Service
-// {
-//     public static class RhinocerosService
-//     {
-//         public static IEnumerable<departement> GetDepartmentByName(string name)
-//         {
+namespace Reader.Service
+{
+    public class RhinocerosService
+    {
+        private readonly IMongoCollection<ObjetDepartment> _departments;
 
-//         var settings = "mongodb+srv://root:toor@rhinoceros.jkqed.mongodb.net/Rhinoceros?retryWrites=true&w=majority";
-//         var client = new MongoClient(settings);
-//         var Database = client.GetDatabase("Rhinoceros");
+        public RhinocerosService(IRhinocerosDBSettings settings)
+        {
+            var client = new MongoClient(settings.ConnectionString);
+            var database = client.GetDatabase(settings.DatabaseName);
 
-//         var collection = Database.GetCollection<ObjetDepartment>("Departments");
+            _departments = database.GetCollection<ObjetDepartment>(settings.CollectionName);
+        }
+        public List<ObjetDepartment> Get() =>
+            _departments.Find(ObjetDepartment => true).ToList();
 
-//         IMongoCollection<ObjetDepartment> collection = Database.GetCollection<ObjetDepartment>("Departments");
-             
-//         }
-        
-//     }
-    
-// }
+        public ObjetDepartment Get(string id) =>
+            _departments.Find<ObjetDepartment>(ObjetDepartment => ObjetDepartment.Id == id).FirstOrDefault();
+
+    }  
+}
 
 

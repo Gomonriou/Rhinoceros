@@ -11,6 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Reader.Repository;
+using Microsoft.Extensions.Options;
+using Reader.Service;
+
 
 namespace Reader
 {
@@ -26,7 +30,13 @@ namespace Reader
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<RhinocerosDBSettings>(
+                Configuration.GetSection(nameof(RhinocerosDBSettings)));
 
+            services.AddSingleton<IRhinocerosDBSettings>(sp =>
+                sp.GetRequiredService<IOptions<RhinocerosDBSettings>>().Value);
+
+            services.AddSingleton<RhinocerosService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
