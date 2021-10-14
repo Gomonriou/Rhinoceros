@@ -39,3 +39,7 @@
 /home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/ref/Reader.dll
 /home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.pdb
 /home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/obj/Debug/net5.0/Reader.genruntimeconfig.cache
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/bin/Debug/net5.0/Newtonsoft.Json.dll
+/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll

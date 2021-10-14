@@ -19,11 +19,41 @@ namespace Reader.Service
 
             _departments = database.GetCollection<ObjetDepartment>(settings.CollectionName);
         }
+
         public List<ObjetDepartment> Get() =>
             _departments.Find(ObjetDepartment => true).ToList();
 
-        public ObjetDepartment Get(string id) =>
-            _departments.Find<ObjetDepartment>(ObjetDepartment => ObjetDepartment.Id == id).FirstOrDefault();
+
+        public ObjetDepartment GetDepartmentsById(string id) =>
+            _departments.Find<ObjetDepartment>(ObjetDepartment => ObjetDepartment.Id == id).FirstOrDefault();            
+
+
+        public IEnumerable<ObjetDepartment> GetDepartmentsByName(string name)
+        {
+            var query = _departments.AsQueryable()
+                      .Where(p => p.DepartmentNom == name)
+                      .Select(p => p);
+
+            return query;
+        } 
+
+        public IEnumerable<ObjetDepartment> GetDepartmentsByPostalCode(string PostalCode)
+        {
+            var query = _departments.AsQueryable()
+                      .Where(p => p.Code_Postale == PostalCode)
+                      .Select(p => p);
+
+            return query;
+        } 
+
+        public IEnumerable<string> SearchDepartment(Search search)
+        {
+            var query = _departments.AsQueryable()
+                      .Where(p => p.Code_Postale == search.CodePostal)
+                      .Select(p => p.DepartmentNom);
+
+            return query;
+        }        
 
     }  
 }

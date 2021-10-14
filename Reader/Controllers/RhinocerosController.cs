@@ -28,86 +28,47 @@ namespace Reader.Controllers
         [HttpGet]                                               // https://localhost:5001/Rhinoceros/
         public ActionResult<List<ObjetDepartment>> Get() =>
             _departmentService.Get();  
+            
 
 
-        [HttpGet("{id:length(24)}", Name = "GetDepartment")]    // https://localhost:5001/Rhinoceros/6162d1050f4cf766959653bc
-        public ActionResult<ObjetDepartment> Get(string id)
+        [HttpGet("{id:length(24)}", Name = "GetDepartmentByID")]    // https://localhost:5001/Rhinoceros/6162d1050f4cf766959653bc
+        public ActionResult<ObjetDepartment> GetDepartmentsById(string id)
         {
-            var NomDepartment = _departmentService.Get(id);
+            var NomDepartmentbyId = _departmentService.GetDepartmentsById(id);
 
-            if (NomDepartment == null)
+            if (NomDepartmentbyId == null)
             {
                 return NotFound();
             }
 
-            return NomDepartment;
+            return NomDepartmentbyId;
         }
 
-        [HttpPost("search")] // localhost/Rhino/Search
-        public IActionResult Rechercher(Search search)
+        [HttpGet]    // https://localhost:5001/Rhinoceros/Gironde
+        [Route("{name}")]
+        public IEnumerable<ObjetDepartment> GetDepartmentsByName(string name)
         {
-            return Content("");
+            var NomDepartmentbyName = _departmentService.GetDepartmentsByName(name);
+            return NomDepartmentbyName;
         }
+
+
+        [HttpGet("GetDepartmentByPostalCode")]    // https://localhost:5001/Rhinoceros/GetDepartmentByPostalCode?PostalCode=32
+        public IEnumerable<ObjetDepartment> GetDepartmentsByPostalCode(string PostalCode)
+        {
+            var NomDepartmentbyPostalCode = _departmentService.GetDepartmentsByPostalCode(PostalCode);
+            return NomDepartmentbyPostalCode;
+        }
+
+
+        [HttpPost("search")] 
+        public IEnumerable<string>  Rechercher(Search Search)
+        {
+            // return Content(""); 
+            var test =  _departmentService.SearchDepartment(Search); 
+            return test; 
+        }
+        
 
     }    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // [HttpGet]
-        // [Route("byname/{name}")]
-        // public async Task<ActionResult> GetByName(string name)
-        // {   try
-        //     {
-        //         var filter = Builders<ObjetDepartment>.Filter;
-        //         var eqFilter = filter.Eq(x => x.DepartmentsNom, name);
-
-        //         var result = await dbCollection.FindAsync<ObjetDepartment>(eqFilter).ConfigureAwait(false);
-        //         return Ok(result.FirstOrDefault());
-        //     }
-        //     finally
-        //     {
-        //         Console.WriteLine("casse les couilles");
-        //     }
-        // }
-
-
-        // [HttpGet]
-        // [Route("test")]        
-        // public async Task<ActionResult<IEnumerable<ObjetDepartment>>> GetAll()
-        // {
-        //    FilterDefinitionBuilder<ObjetDepartment> filter = Builders<ObjetDepartment>.Filter;
-        //    FilterDefinition<ObjetDepartment> emptyFilter = filter.Empty;
-
-        //    IAsyncCursor<ObjetDepartment> allDocuments = await dbCollection.FindAsync<ObjetDepartment>(emptyFilter).ConfigureAwait(false);
-
-        //    return Ok(allDocuments.ToList());
-        // }

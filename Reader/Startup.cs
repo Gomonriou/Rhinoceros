@@ -37,7 +37,11 @@ namespace Reader
                 sp.GetRequiredService<IOptions<RhinocerosDBSettings>>().Value);
 
             services.AddSingleton<RhinocerosService>();
-            services.AddControllers();
+            
+            // services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson(options => options.UseMemberCasing());
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Reader", Version = "v1" });

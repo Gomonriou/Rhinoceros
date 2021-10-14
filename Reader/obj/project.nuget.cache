@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "M5lRMFDOlAK/UEWq4igKScy4Q2LCUeciYYW45kLIY8r/vSzKA8+RnN27++dHCLNOWKjNxt5Qd0MF0D1E2tpTww==",
+  "dgSpecHash": "yPzRz3ioqsWj/0S3fOEaRJMBHO165Gpk0oUIJrfERMas008FR4qMTHJtA66dAdIdmTtNbJMrk6VIkxV1zKHOfw==",
   "success": true,
   "projectFilePath": "/home/gomonriou/Documents/M1_Cours/elective_C#/Rhinoceros/Reader/Reader.csproj",
   "expectedPackageFiles": [
     "/home/gomonriou/.nuget/packages/dnsclient/1.4.0/dnsclient.1.4.0.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/microsoft.aspnetcore.jsonpatch/5.0.11/microsoft.aspnetcore.jsonpatch.5.0.11.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/5.0.11/microsoft.aspnetcore.mvc.newtonsoftjson.5.0.11.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
@@ -12,6 +15,8 @@
     "/home/gomonriou/.nuget/packages/mongodb.driver/2.13.2/mongodb.driver.2.13.2.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/mongodb.driver.core/2.13.2/mongodb.driver.core.2.13.2.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/mongodb.libmongocrypt/1.2.2/mongodb.libmongocrypt.1.2.2.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/home/gomonriou/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/sharpcompress/0.23.0/sharpcompress.0.23.0.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "/home/gomonriou/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
