@@ -61,12 +61,11 @@ namespace Reader.Controllers
         }
 
 
-        [HttpPost("search")] 
-        public IEnumerable<string>  Rechercher(Search Search)
+        [HttpPost("search")] // curl -X POST "https://localhost:5001/Rhinoceros/search" -H  "accept: text/plain" -H  "Content-Type: application/json-patch+json" -d "{\"nom\":\"A\",\"nombre\":0,\"codePostal\":\"3\"}"
+        public IEnumerable<ObjetDepartment>  Rechercher(Search Search)
         {
-            // return Content(""); 
-            var test =  _departmentService.SearchDepartment(Search); 
-            return test; 
+            var SearchDepartment =  _departmentService.SearchDepartment(Search); 
+            return SearchDepartment; 
         }
         
 

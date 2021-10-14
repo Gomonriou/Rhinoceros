@@ -11,13 +11,13 @@ namespace Reader.Service
 {
     public class Search
     {
-       
-        public string Nom { get; set; }
+        public string DepartmentName { get; set; }
         
-        public int? Nombre { get; set; }
+        public string PostalCode { get; set; }
         
-        public string CodePostal { get; set; }
-        
+        public int? Population { get; set; }
+
+        public string ConditionPopulation { get; set; }
         
     }
 }

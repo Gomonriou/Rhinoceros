@@ -46,16 +46,27 @@ namespace Reader.Service
             return query;
         } 
 
-        public IEnumerable<string> SearchDepartment(Search search)
-        {
+        public IEnumerable<ObjetDepartment> SearchDepartment(Search search)
+        {   
+            
+            if (search.DepartmentName.Length < 3 | search.PostalCode.Length > 3)
+            {
+                throw new Exception("La recherche est invalide");
+            }
+            else
+            {        
             var query = _departments.AsQueryable()
-                      .Where(p => p.Code_Postale == search.CodePostal)
-                      .Select(p => p.DepartmentNom);
+                      .Where(p => p.Code_Postale.Contains(search.PostalCode) && p.DepartmentNom.Contains(search.DepartmentName) )
+                      .Select(p => p);
 
             return query;
+            }
         }        
 
     }  
 }
 
 
+            // var query = _departments.AsQueryable()
+            //           .Where(p => p.Code_Postale.Contains(search.PostalCode) && p.DepartmentNom.Contains(search.DepartmentName) && (p.Population > search.Population)  )
+            //           .Select(p => p);
